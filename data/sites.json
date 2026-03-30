@@ -18,6 +18,15 @@
     "notes": ""
   },
   {
+    "name": "Impeccable",
+    "category": "参考示例",
+    "url": "https://impeccable.style/",
+    "intro": "一个围绕 frontend-design skill 打造的专题站点，适合参考工具型产品页面的文案组织和视觉包装。",
+    "screenshot": "assets/screenshots/impeccable-style.png",
+    "captured_at": "2026-03-30",
+    "notes": ""
+  },
+  {
     "name": "SiteInspire",
     "category": "参考示例的集合",
     "url": "https://www.siteinspire.com/websites/category/personal",
