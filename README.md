@@ -13,7 +13,7 @@ Frontend design and personal website references. This repo collects useful sites
 | [Origin by Chris Shiflett](http://origin.shiflett.org/) | A polished personal site that shows how to present identity, work, and writing in one place. | <img src="assets/screenshots/origin-shiflett.png" width="360" alt="Origin by Chris Shiflett screenshot" /> |
 | [Paperclip](https://paperclip.ing/) | A strong AI product site with clear motion, layout, and product story ideas. | <img src="assets/screenshots/paperclip.png" width="360" alt="Paperclip screenshot" /> |
 
-## Example Collections
+## Gallery
 
 | Website | Intro | Screenshot |
 | --- | --- | --- |

@@ -1,58 +1,104 @@
 const categoryMeta = {
-  "参考示例": {
-    id: "reference-examples",
-    kicker: "Reference Examples",
-    title: "参考示例",
-    description: "直接可看的成品网站。更适合观察首屏、内容组织、排版和叙事方式。",
+  all: {
+    title: "全部",
+    subtitle: "All",
+    description: "浏览整个 collection，包括参考示例、画廊、前端组件和 skills。",
   },
-  "参考示例的集合": {
-    id: "reference-collections",
-    kicker: "Example Collections",
-    title: "参考示例的集合",
-    description: "聚合类灵感站点。适合集中检索不同风格、不同产品类型与不同布局模式。",
+  "参考示例": {
+    title: "参考示例",
+    subtitle: "Reference Examples",
+    description: "直接可看的成品网站，更适合观察首页、叙事、排版和品牌表达。",
+  },
+  "画廊": {
+    title: "画廊",
+    subtitle: "Gallery",
+    description: "聚合类灵感站点，适合快速扫不同风格、布局模式和产品类型。",
   },
   "前端组件": {
-    id: "frontend-components",
-    kicker: "Frontend Components",
     title: "前端组件",
-    description: "更偏向组件层面的参考，适合查表单、按钮、导航和设计系统细节。",
+    subtitle: "Frontend Components",
+    description: "更偏组件层面的资源，适合查按钮、表单、导航和设计系统细节。",
   },
   Skills: {
-    id: "skills",
-    kicker: "Skills",
     title: "Skills",
+    subtitle: "Skills",
     description: "围绕 prompt、workflow、agent 和设计能力封装出来的技能型资源。",
   },
 };
 
-const orderedCategories = ["参考示例", "参考示例的集合", "前端组件", "Skills"];
+const orderedCategories = ["参考示例", "画廊", "前端组件", "Skills"];
 
-const sectionList = document.getElementById("section-list");
-const sectionNav = document.getElementById("section-nav");
+const chips = document.getElementById("chips");
+const grid = document.getElementById("grid");
 const siteCount = document.getElementById("site-count");
 const categoryCount = document.getElementById("category-count");
 const captureDate = document.getElementById("capture-date");
+const currentTitle = document.getElementById("current-title");
+const currentDesc = document.getElementById("current-desc");
+const resultCount = document.getElementById("result-count");
+const search = document.getElementById("search");
 const template = document.getElementById("site-card-template");
 
-function createCard(site, index) {
+let allSites = [];
+let activeCategory = "all";
+let query = "";
+
+function renderChip(category, sites) {
+  const meta = categoryMeta[category];
+  const total = category === "all" ? sites.length : sites.filter((site) => site.category === category).length;
+
+  const button = document.createElement("button");
+  button.className = `chip ${activeCategory === category ? "active" : ""}`;
+  button.type = "button";
+  button.innerHTML = `
+    <span class="chip-label">
+      <span class="chip-title">${meta.title}</span>
+      <span class="chip-subtitle">${meta.subtitle}</span>
+    </span>
+    <span class="chip-count">${String(total).padStart(2, "0")}</span>
+  `;
+  button.addEventListener("click", () => {
+    activeCategory = category;
+    render();
+  });
+
+  return button;
+}
+
+function renderChips(sites) {
+  chips.innerHTML = "";
+  ["all", ...orderedCategories].forEach((category) => {
+    chips.appendChild(renderChip(category, sites));
+  });
+}
+
+function getFilteredSites() {
+  return allSites.filter((site) => {
+    const matchCategory = activeCategory === "all" || site.category === activeCategory;
+    const haystack = `${site.name} ${site.intro} ${site.category} ${site.url}`.toLowerCase();
+    const matchQuery = !query || haystack.includes(query);
+    return matchCategory && matchQuery;
+  });
+}
+
+function renderCard(site) {
   const fragment = template.content.cloneNode(true);
-  const shot = fragment.querySelector(".site-shot");
+  const shot = fragment.querySelector(".card-shot");
   const img = fragment.querySelector("img");
-  const title = fragment.querySelector(".site-title");
-  const intro = fragment.querySelector(".site-intro");
-  const url = fragment.querySelector(".site-url");
-  const note = fragment.querySelector(".site-note");
-  const counter = fragment.querySelector(".site-index");
+  const title = fragment.querySelector(".card-title");
+  const url = fragment.querySelector(".card-url");
+  const badge = fragment.querySelector(".card-badge");
+  const intro = fragment.querySelector(".card-intro");
+  const note = fragment.querySelector(".card-note");
 
   shot.href = site.url;
   img.src = site.screenshot;
   img.alt = `${site.name} screenshot`;
   title.href = site.url;
   title.textContent = site.name;
-  intro.textContent = site.intro;
-  url.href = site.url;
   url.textContent = site.url.replace(/^https?:\/\//, "");
-  counter.textContent = String(index).padStart(2, "0");
+  badge.textContent = categoryMeta[site.category]?.subtitle || site.category;
+  intro.textContent = site.intro;
 
   if (site.notes) {
     note.hidden = false;
@@ -62,85 +108,54 @@ function createCard(site, index) {
   return fragment;
 }
 
-function createSection(category, sites) {
-  const meta = categoryMeta[category];
-  const section = document.createElement("section");
-  section.className = "category-section";
-  section.id = meta.id;
-
-  const head = document.createElement("div");
-  head.className = "section-head";
-  head.innerHTML = `
-    <span class="section-kicker">${meta.kicker}</span>
-    <h2 class="section-title">${meta.title}</h2>
-    <p class="section-desc">${meta.description}</p>
-  `;
-
-  const grid = document.createElement("div");
-  grid.className = "site-grid";
-  sites.forEach((site, idx) => {
-    grid.appendChild(createCard(site, idx + 1));
-  });
-
-  section.append(head, grid);
-  return section;
+function renderHeader(filteredSites) {
+  const meta = categoryMeta[activeCategory];
+  currentTitle.textContent = meta.title;
+  currentDesc.textContent = meta.description;
+  resultCount.textContent = `${filteredSites.length} result${filteredSites.length > 1 ? "s" : ""}`;
 }
 
-function buildNav() {
-  const links = orderedCategories.map((category) => {
-    const meta = categoryMeta[category];
-    return `<a href="#${meta.id}">${meta.title}</a>`;
+function renderGrid(filteredSites) {
+  grid.innerHTML = "";
+
+  if (!filteredSites.length) {
+    grid.innerHTML = `<p class="loading-state">没有匹配的结果。</p>`;
+    return;
+  }
+
+  filteredSites.forEach((site) => {
+    grid.appendChild(renderCard(site));
   });
-  sectionNav.innerHTML = links.join("");
 }
 
-function activateNavOnScroll() {
-  const sections = orderedCategories
-    .map((category) => document.getElementById(categoryMeta[category].id))
-    .filter(Boolean);
-  const links = Array.from(sectionNav.querySelectorAll("a"));
+function renderStats(sites) {
+  siteCount.textContent = String(sites.length).padStart(2, "0");
+  categoryCount.textContent = String(orderedCategories.length);
+  captureDate.textContent = [...new Set(sites.map((site) => site.captured_at))].join(" / ");
+}
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        links.forEach((link) => {
-          link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
-        });
-      });
-    },
-    {
-      rootMargin: "-30% 0px -55% 0px",
-      threshold: 0.01,
-    }
-  );
-
-  sections.forEach((section) => observer.observe(section));
+function render() {
+  const filteredSites = getFilteredSites();
+  renderChips(allSites);
+  renderHeader(filteredSites);
+  renderGrid(filteredSites);
 }
 
 async function init() {
   try {
     const response = await fetch("data/sites.json");
     if (!response.ok) throw new Error("Failed to load data");
-    const sites = await response.json();
 
-    siteCount.textContent = String(sites.length).padStart(2, "0");
-    categoryCount.textContent = String(orderedCategories.length);
-    captureDate.textContent = [...new Set(sites.map((site) => site.captured_at))].join(" / ");
+    allSites = await response.json();
+    renderStats(allSites);
+    render();
 
-    const grouped = orderedCategories.map((category) => ({
-      category,
-      sites: sites.filter((site) => site.category === category),
-    }));
-
-    buildNav();
-    sectionList.innerHTML = "";
-    grouped.forEach(({ category, sites }) => {
-      if (sites.length) sectionList.appendChild(createSection(category, sites));
+    search.addEventListener("input", (event) => {
+      query = event.target.value.trim().toLowerCase();
+      render();
     });
-    activateNavOnScroll();
   } catch (error) {
-    sectionList.innerHTML = `<p class="loading-state">加载失败：${error.message}</p>`;
+    grid.innerHTML = `<p class="loading-state">加载失败：${error.message}</p>`;
   }
 }
 

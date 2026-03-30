@@ -13,7 +13,7 @@
 | [Origin by Chris Shiflett](http://origin.shiflett.org/) | 一个完成度很高的个人网站示例，展示创业者、产品设计师和开发者的个人介绍与内容组织。 | <img src="assets/screenshots/origin-shiflett.png" width="360" alt="Origin by Chris Shiflett screenshot" /> |
 | [Paperclip](https://paperclip.ing/) | 视觉完成度很高的 AI 产品官网，可参考动效、排版和产品叙事方式。 | <img src="assets/screenshots/paperclip.png" width="360" alt="Paperclip screenshot" /> |
 
-## 参考示例的集合
+## 画廊
 
 | Website | Intro | Screenshot |
 | --- | --- | --- |

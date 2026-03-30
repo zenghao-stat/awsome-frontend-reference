@@ -28,7 +28,7 @@
   },
   {
     "name": "SiteInspire",
-    "category": "参考示例的集合",
+    "category": "画廊",
     "url": "https://www.siteinspire.com/websites/category/personal",
     "intro": "收录 personal 分类网页，适合快速查看个人网站的排版、字体和视觉风格。",
     "screenshot": "assets/screenshots/siteinspire.png",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Land-book",
-    "category": "参考示例的集合",
+    "category": "画廊",
     "url": "https://land-book.com/design/portfolio",
     "intro": "以落地页和作品集为主的灵感库，适合参考 portfolio 的首屏结构和视觉节奏。",
     "screenshot": "assets/screenshots/land-book.png",
@@ -46,7 +46,7 @@
   },
   {
     "name": "Page Flows",
-    "category": "参考示例的集合",
+    "category": "画廊",
     "url": "https://pageflows.com/",
     "intro": "聚合真实产品的用户流程和界面模式，适合参考任务流程、转场和 UX 细节。",
     "screenshot": "assets/screenshots/pageflows.png",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Mobbin",
-    "category": "参考示例的集合",
+    "category": "画廊",
     "url": "https://mobbin.com/",
     "intro": "大型移动端和网页 UI 截图库，适合查界面模式、组件细节和交互参考。",
     "screenshot": "assets/screenshots/mobbin.png",
@@ -64,7 +64,7 @@
   },
   {
     "name": "Godly",
-    "category": "参考示例的集合",
+    "category": "画廊",
     "url": "https://godly.website/",
     "intro": "精选高质量网站灵感，偏重品牌站、作品集和新产品官网的视觉表达。",
     "screenshot": "assets/screenshots/godly.png",
