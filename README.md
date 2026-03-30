@@ -1,22 +1,16 @@
 # awsome-frontend-reference
 
-前端设计与个人网页参考仓库。这里整理了一组常用灵感站点，并用表格统一记录 `URL / Intro / Screenshot`。
+[中文版本](README_cn.md)
 
-> 截图采集时间：2026-03-30（Playwright controlled Chromium）
->
-> `Land-book` 与 `Page Flows` 在自动截图时触发了 Cloudflare 安全校验，因此截图保留的是当时的校验页；简介为人工整理。
+Frontend design and personal website references. This repo collects useful sites in a table with `URL / Intro / Screenshot`.
 
-| 分类 | Website | URL | Intro | Screenshot |
+| Category | Website | URL | Intro | Screenshot |
 | --- | --- | --- | --- | --- |
-| 参考示例 | Origin by Chris Shiflett | [http://origin.shiflett.org/](http://origin.shiflett.org/) | 一个完成度很高的个人网站示例，展示创业者、产品设计师和开发者的个人介绍与内容组织。 | <img src="assets/screenshots/origin-shiflett.png" width="360" alt="Origin by Chris Shiflett screenshot" /> |
-| 参考示例 | Paperclip | [https://paperclip.ing/](https://paperclip.ing/) | 视觉完成度很高的 AI 产品官网，可参考动效、排版和产品叙事方式。 | <img src="assets/screenshots/paperclip.png" width="360" alt="Paperclip screenshot" /> |
-| 参考示例的集合 | SiteInspire | [https://www.siteinspire.com/websites/category/personal](https://www.siteinspire.com/websites/category/personal) | 收录 personal 分类网页，适合快速查看个人网站的排版、字体和视觉风格。 | <img src="assets/screenshots/siteinspire.png" width="360" alt="SiteInspire screenshot" /> |
-| 参考示例的集合 | Land-book | [https://land-book.com/design/portfolio](https://land-book.com/design/portfolio) | 以落地页和作品集为主的灵感库，适合参考 portfolio 的首屏结构和视觉节奏。 | <img src="assets/screenshots/land-book.png" width="360" alt="Land-book screenshot" /> |
-| 参考示例的集合 | Page Flows | [https://pageflows.com/](https://pageflows.com/) | 聚合真实产品的用户流程和界面模式，适合参考任务流程、转场和 UX 细节。 | <img src="assets/screenshots/pageflows.png" width="360" alt="Page Flows screenshot" /> |
-| 参考示例的集合 | Mobbin | [https://mobbin.com/](https://mobbin.com/) | 大型移动端和网页 UI 截图库，适合查界面模式、组件细节和交互参考。 | <img src="assets/screenshots/mobbin.png" width="360" alt="Mobbin screenshot" /> |
-| 参考示例的集合 | Godly | [https://godly.website/](https://godly.website/) | 精选高质量网站灵感，偏重品牌站、作品集和新产品官网的视觉表达。 | <img src="assets/screenshots/godly.png" width="360" alt="Godly screenshot" /> |
-| 前端组件 | Component Gallery | [https://component.gallery/](https://component.gallery/) | 收集设计系统里的界面组件案例，适合查按钮、表单、导航等组件的常见做法。 | <img src="assets/screenshots/component-gallery.png" width="360" alt="Component Gallery screenshot" /> |
-
-## Data
-
-结构化数据见 [data/sites.json](data/sites.json)。
+| Reference Examples | Origin by Chris Shiflett | [http://origin.shiflett.org/](http://origin.shiflett.org/) | A polished personal site that shows how to present identity, work, and writing in one place. | <img src="assets/screenshots/origin-shiflett.png" width="360" alt="Origin by Chris Shiflett screenshot" /> |
+| Reference Examples | Paperclip | [https://paperclip.ing/](https://paperclip.ing/) | A strong AI product site with clear motion, layout, and product story ideas. | <img src="assets/screenshots/paperclip.png" width="360" alt="Paperclip screenshot" /> |
+| Example Collections | SiteInspire | [https://www.siteinspire.com/websites/category/personal](https://www.siteinspire.com/websites/category/personal) | A personal website collection for checking layout, type, and visual style. | <img src="assets/screenshots/siteinspire.png" width="360" alt="SiteInspire screenshot" /> |
+| Example Collections | Land-book | [https://land-book.com/design/portfolio](https://land-book.com/design/portfolio) | A gallery of landing pages and portfolios that is useful for first-screen structure and visual rhythm. | <img src="assets/screenshots/land-book.png" width="360" alt="Land-book screenshot" /> |
+| Example Collections | Page Flows | [https://pageflows.com/](https://pageflows.com/) | A large collection of real product flows and UI patterns for studying UX details and task flows. | <img src="assets/screenshots/pageflows.png" width="360" alt="Page Flows screenshot" /> |
+| Example Collections | Mobbin | [https://mobbin.com/](https://mobbin.com/) | A large UI screenshot library for mobile and web products. | <img src="assets/screenshots/mobbin.png" width="360" alt="Mobbin screenshot" /> |
+| Example Collections | Godly | [https://godly.website/](https://godly.website/) | A curated set of high-quality sites, often strong in brand style, portfolio design, and new product pages. | <img src="assets/screenshots/godly.png" width="360" alt="Godly screenshot" /> |
+| Frontend Components | Component Gallery | [https://component.gallery/](https://component.gallery/) | A component reference built from design system examples, useful for buttons, forms, nav, and other common UI parts. | <img src="assets/screenshots/component-gallery.png" width="360" alt="Component Gallery screenshot" /> |
