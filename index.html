@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Frontend Reference Gallery</title>
     <meta
       name="description"
-      content="一个适合浏览前端设计参考、画廊站点、组件资源与 skills 的 GitHub Pages collection。"
+      content="A GitHub Pages collection for browsing frontend design references, galleries, component resources, and skills."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,27 +16,30 @@
     />
     <link rel="stylesheet" href="assets/site.css" />
   </head>
-  <body>
+  <body data-lang="en">
     <div class="shell">
       <aside class="sidebar">
         <div class="brand mono">Awesome Frontend Reference</div>
-        <h1>把 collection 做成真的 gallery。</h1>
-        <p class="sidebar-copy">
-          这里收集前端设计参考、完整站点、画廊站点、组件库和 skills。页面直接读取
-          <a href="data/sites.json">sites.json</a>，适合继续扩展。
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <button class="lang-btn active" type="button" data-lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="zh">中</button>
+        </div>
+        <h1 id="hero-title">Frontend Design Reference</h1>
+        <p class="sidebar-copy" id="hero-copy">
+          A collection of frontend design references, full websites, galleries, component resources, and skills.
         </p>
 
         <div class="sidebar-meta">
           <div class="meta-block">
-            <span class="meta-label mono">items</span>
+            <span class="meta-label mono" id="label-items">items</span>
             <strong class="meta-value" id="site-count">--</strong>
           </div>
           <div class="meta-block">
-            <span class="meta-label mono">categories</span>
+            <span class="meta-label mono" id="label-categories">categories</span>
             <strong class="meta-value" id="category-count">--</strong>
           </div>
           <div class="meta-block">
-            <span class="meta-label mono">capture</span>
+            <span class="meta-label mono" id="label-capture">capture</span>
             <strong class="meta-value meta-date" id="capture-date">--</strong>
           </div>
         </div>
@@ -46,27 +49,29 @@
         <div class="chips" id="chips"></div>
 
         <div class="sidebar-links">
-          <a href="README.md">README</a>
-          <a href="README_cn.md">README_CN</a>
-          <a href="https://github.com/zenghao-stat/awsome-frontend-reference" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="github-button" href="https://github.com/zenghao-stat/awsome-frontend-reference" target="_blank" rel="noreferrer" aria-label="Open GitHub repository">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.68.5 12.08c0 5.12 3.3 9.47 7.88 11 .58.1.79-.25.79-.56 0-.28-.01-1.2-.02-2.17-3.2.7-3.88-1.37-3.88-1.37-.53-1.35-1.29-1.71-1.29-1.71-1.05-.73.08-.72.08-.72 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.26 3.36.96.11-.76.4-1.26.73-1.55-2.56-.29-5.24-1.29-5.24-5.73 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.48.11-3.08 0 0 .97-.31 3.16 1.19a10.9 10.9 0 0 1 5.75 0c2.19-1.5 3.16-1.19 3.16-1.19.62 1.6.23 2.79.11 3.08.73.81 1.18 1.85 1.18 3.11 0 4.45-2.69 5.43-5.26 5.72.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.67.8.56A11.6 11.6 0 0 0 23.5 12.08C23.5 5.68 18.35.5 12 .5Z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
         </div>
       </aside>
 
       <main class="main-panel">
         <header class="toolbar">
           <div>
-            <p class="toolbar-kicker mono">Gallery Browser</p>
-            <h2 id="current-title">全部</h2>
-            <p id="current-desc" class="toolbar-desc">浏览整个 collection。</p>
+            <p class="toolbar-kicker mono" id="toolbar-kicker">Gallery Browser</p>
+            <h2 id="current-title">All</h2>
+            <p id="current-desc" class="toolbar-desc">Browse the full collection.</p>
           </div>
           <div class="toolbar-side">
             <span id="result-count" class="result-count">0 results</span>
-            <a class="toolbar-link" href="https://zenghao-stat.github.io/awsome-frontend-reference/">Live</a>
           </div>
         </header>
 
         <section class="grid" id="grid">
-          <p class="loading-state">正在加载 collection...</p>
+          <p class="loading-state">Loading collection...</p>
         </section>
       </main>
     </div>
