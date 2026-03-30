@@ -17,13 +17,20 @@ const categoryMeta = {
     title: "前端组件",
     description: "更偏向组件层面的参考，适合查表单、按钮、导航和设计系统细节。",
   },
+  Skills: {
+    id: "skills",
+    kicker: "Skills",
+    title: "Skills",
+    description: "围绕 prompt、workflow、agent 和设计能力封装出来的技能型资源。",
+  },
 };
 
-const orderedCategories = ["参考示例", "参考示例的集合", "前端组件"];
+const orderedCategories = ["参考示例", "参考示例的集合", "前端组件", "Skills"];
 
 const sectionList = document.getElementById("section-list");
 const sectionNav = document.getElementById("section-nav");
 const siteCount = document.getElementById("site-count");
+const categoryCount = document.getElementById("category-count");
 const captureDate = document.getElementById("capture-date");
 const template = document.getElementById("site-card-template");
 
@@ -118,6 +125,7 @@ async function init() {
     const sites = await response.json();
 
     siteCount.textContent = String(sites.length).padStart(2, "0");
+    categoryCount.textContent = String(orderedCategories.length);
     captureDate.textContent = [...new Set(sites.map((site) => site.captured_at))].join(" / ");
 
     const grouped = orderedCategories.map((category) => ({

@@ -12,7 +12,6 @@ Frontend design and personal website references. This repo collects useful sites
 | --- | --- | --- | --- |
 | Origin by Chris Shiflett | [http://origin.shiflett.org/](http://origin.shiflett.org/) | A polished personal site that shows how to present identity, work, and writing in one place. | <img src="assets/screenshots/origin-shiflett.png" width="360" alt="Origin by Chris Shiflett screenshot" /> |
 | Paperclip | [https://paperclip.ing/](https://paperclip.ing/) | A strong AI product site with clear motion, layout, and product story ideas. | <img src="assets/screenshots/paperclip.png" width="360" alt="Paperclip screenshot" /> |
-| Impeccable | [https://impeccable.style/](https://impeccable.style/) | A focused product site around the frontend-design skill, useful for studying copy structure and visual framing in tool landing pages. | <img src="assets/screenshots/impeccable-style.png" width="360" alt="Impeccable screenshot" /> |
 
 ## Example Collections
 
@@ -29,3 +28,9 @@ Frontend design and personal website references. This repo collects useful sites
 | Website | URL | Intro | Screenshot |
 | --- | --- | --- | --- |
 | Component Gallery | [https://component.gallery/](https://component.gallery/) | A component reference built from design system examples, useful for buttons, forms, nav, and other common UI parts. | <img src="assets/screenshots/component-gallery.png" width="360" alt="Component Gallery screenshot" /> |
+
+## Skills
+
+| Website | URL | Intro | Screenshot |
+| --- | --- | --- | --- |
+| Impeccable | [https://impeccable.style/](https://impeccable.style/) | A focused site around frontend-design skills, useful for studying how a skill product frames features, commands, and anti-patterns. | <img src="assets/screenshots/impeccable-style.png" width="360" alt="Impeccable screenshot" /> |
