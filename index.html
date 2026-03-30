@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Frontend Reference</title>
+    <meta
+      name="description"
+      content="一个用于展示前端设计参考、个人网页案例与组件集合的 GitHub Pages 收藏页。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-left"></div>
+      <div class="ambient ambient-right"></div>
+
+      <header class="hero">
+        <nav class="topbar">
+          <a class="brand" href="#top">
+            <span class="brand-mark"></span>
+            <span class="brand-text">Awesome Frontend Reference</span>
+          </a>
+          <div class="topbar-links">
+            <a href="README.md">README</a>
+            <a href="README_cn.md">README_CN</a>
+            <a href="https://github.com/zenghao-stat/awsome-frontend-reference" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy" id="top">
+            <p class="eyebrow">Design Collection / Personal Web / Components</p>
+            <h1>把前端灵感做成一个可浏览、可分享、可持续扩展的 collection。</h1>
+            <p class="hero-text">
+              这里收集个人网页参考、灵感站点集合，以及前端组件案例。页面直接读取仓库数据文件生成，方便后续持续扩展。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#sections">开始浏览</a>
+              <a class="ghost-link" href="data/sites.json">查看数据</a>
+            </div>
+          </section>
+
+          <aside class="hero-panel">
+            <div class="stat-card">
+              <span class="stat-label">Collection Size</span>
+              <strong class="stat-value" id="site-count">--</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Category Count</span>
+              <strong class="stat-value" id="category-count">3</strong>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Last Capture</span>
+              <strong class="stat-value stat-value-small" id="capture-date">--</strong>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main class="content" id="sections">
+        <div class="section-nav" id="section-nav"></div>
+        <div class="section-list" id="section-list">
+          <p class="loading-state">正在加载 collection...</p>
+        </div>
+      </main>
+    </div>
+
+    <template id="site-card-template">
+      <article class="site-card">
+        <a class="site-shot" target="_blank" rel="noreferrer">
+          <img alt="" loading="lazy" />
+        </a>
+        <div class="site-body">
+          <div class="site-meta">
+            <span class="site-index"></span>
+            <a class="site-title" target="_blank" rel="noreferrer"></a>
+          </div>
+          <p class="site-intro"></p>
+          <div class="site-footer">
+            <a class="site-url" target="_blank" rel="noreferrer"></a>
+            <p class="site-note" hidden></p>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>
