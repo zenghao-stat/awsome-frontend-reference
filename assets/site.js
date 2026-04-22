@@ -62,16 +62,16 @@ const categoryMeta = {
       zh: "更偏组件层面的资源，适合查按钮、表单、导航和设计系统细节。",
     },
   },
-  Skills: {
-    label: { en: "Skills", zh: "Skills" },
+  "Skills & Prompts": {
+    label: { en: "Skills & Prompts", zh: "Skills & Prompts" },
     description: {
-      en: "Skill-based resources that package prompt, workflow, agent, and design capabilities.",
-      zh: "围绕 prompt、workflow、agent 和设计能力封装出来的技能型资源。",
+      en: "Resources centered on prompts, workflows, agents, and packaged design capabilities.",
+      zh: "围绕 prompt、workflow、agent 和设计能力整理的资源集合。",
     },
   },
 };
 
-const orderedCategories = ["参考示例", "画廊", "前端组件", "Skills"];
+const orderedCategories = ["参考示例", "画廊", "前端组件", "Skills & Prompts"];
 
 const chips = document.getElementById("chips");
 const grid = document.getElementById("grid");

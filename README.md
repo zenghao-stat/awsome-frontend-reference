@@ -28,9 +28,12 @@ Frontend design and personal website references. This repo collects useful sites
 | Website | Intro | Screenshot |
 | --- | --- | --- |
 | [Component Gallery](https://component.gallery/) | A component reference built from design system examples, useful for buttons, forms, nav, and other common UI parts. | <img src="assets/screenshots/component-gallery.png" width="360" alt="Component Gallery screenshot" /> |
+| [React Bits](https://www.reactbits.dev/) | A high-quality React component collection with strong motion ideas, useful for studying creative interactions and memorable UI details. | <img src="assets/screenshots/reactbits.png" width="360" alt="React Bits screenshot" /> |
 
-## Skills
+## Skills & Prompts
 
 | Website | Intro | Screenshot |
 | --- | --- | --- |
 | [Impeccable](https://impeccable.style/) | A focused site around frontend-design skills, useful for studying how a skill product frames features, commands, and anti-patterns. | <img src="assets/screenshots/impeccable-style.png" width="360" alt="Impeccable screenshot" /> |
+| [Design Prompts](https://www.designprompts.dev/) | An AI-powered design style explorer that renders the same content in many aesthetics, useful for studying prompt-to-interface mapping. | <img src="assets/screenshots/designprompts.png" width="360" alt="Design Prompts screenshot" /> |
+| [Aura](https://www.aura.build/) | An AI landing page builder and template resource, useful for studying landing-page presentation, template packaging, and product storytelling. | <img src="assets/screenshots/aura-build.jpg" width="360" alt="Aura screenshot" /> |

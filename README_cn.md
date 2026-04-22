@@ -28,9 +28,12 @@
 | Website | Intro | Screenshot |
 | --- | --- | --- |
 | [Component Gallery](https://component.gallery/) | 收集设计系统里的界面组件案例，适合查按钮、表单、导航等组件的常见做法。 | <img src="assets/screenshots/component-gallery.png" width="360" alt="Component Gallery screenshot" /> |
+| [React Bits](https://www.reactbits.dev/) | 一个高质量的 React 动效组件集合，适合参考创意交互、动画组件和更有记忆点的界面细节。 | <img src="assets/screenshots/reactbits.png" width="360" alt="React Bits screenshot" /> |
 
-## Skills
+## Skills & Prompts
 
 | Website | Intro | Screenshot |
 | --- | --- | --- |
 | [Impeccable](https://impeccable.style/) | 一个围绕 frontend-design skill 打造的专题站点，适合参考 skill 产品页面的文案组织、功能分层和视觉包装。 | <img src="assets/screenshots/impeccable-style.png" width="360" alt="Impeccable screenshot" /> |
+| [Design Prompts](https://www.designprompts.dev/) | 一个 AI 驱动的设计风格探索器，用同一份内容展示多种视觉风格，适合参考 prompt 到界面结果的映射。 | <img src="assets/screenshots/designprompts.png" width="360" alt="Design Prompts screenshot" /> |
+| [Aura](https://www.aura.build/) | 一个 AI 落地页生成与模板资源站，适合参考 landing page 的视觉包装、模板组织和产品叙事。 | <img src="assets/screenshots/aura-build.jpg" width="360" alt="Aura screenshot" /> |

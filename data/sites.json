@@ -21,12 +21,32 @@
   },
   {
     "name": "Impeccable",
-    "category": "Skills",
+    "category": "Skills & Prompts",
     "url": "https://impeccable.style/",
     "intro": "一个围绕 frontend-design skill 打造的专题站点，适合参考工具型产品页面的文案组织和视觉包装。",
     "intro_en": "A focused site around frontend-design skills, useful for studying how a skill product frames features, commands, and anti-patterns.",
     "screenshot": "assets/screenshots/impeccable-style.png",
     "captured_at": "2026-03-30",
+    "notes": ""
+  },
+  {
+    "name": "Design Prompts",
+    "category": "Skills & Prompts",
+    "url": "https://www.designprompts.dev/",
+    "intro": "一个 AI 驱动的设计风格探索器，用同一份内容展示多种视觉风格，适合参考 prompt 到界面结果的映射。",
+    "intro_en": "An AI-powered design style explorer that renders the same content in many aesthetics, useful for studying prompt-to-interface mapping.",
+    "screenshot": "assets/screenshots/designprompts.png",
+    "captured_at": "2026-04-21",
+    "notes": ""
+  },
+  {
+    "name": "Aura",
+    "category": "Skills & Prompts",
+    "url": "https://www.aura.build/",
+    "intro": "一个 AI 落地页生成与模板资源站，适合参考 landing page 的视觉包装、模板组织和产品叙事。",
+    "intro_en": "An AI landing page builder and template resource, useful for studying landing-page presentation, template packaging, and product storytelling.",
+    "screenshot": "assets/screenshots/aura-build.jpg",
+    "captured_at": "2026-04-21",
     "notes": ""
   },
   {
@@ -87,6 +107,16 @@
     "intro_en": "A component reference built from design system examples, useful for buttons, forms, navigation, and other common UI parts.",
     "screenshot": "assets/screenshots/component-gallery.png",
     "captured_at": "2026-03-30",
+    "notes": ""
+  },
+  {
+    "name": "React Bits",
+    "category": "前端组件",
+    "url": "https://www.reactbits.dev/",
+    "intro": "一个高质量的 React 动效组件集合，适合参考创意交互、动画组件和更有记忆点的界面细节。",
+    "intro_en": "A high-quality React component collection with strong motion ideas, useful for studying creative interactions and memorable UI details.",
+    "screenshot": "assets/screenshots/reactbits.png",
+    "captured_at": "2026-04-21",
     "notes": ""
   }
 ]
