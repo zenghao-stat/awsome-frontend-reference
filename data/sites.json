@@ -50,6 +50,16 @@
     "notes": ""
   },
   {
+    "name": "getdesign.md",
+    "category": "Skills & Prompts",
+    "url": "https://getdesign.md/",
+    "intro": "一个收集可复用 DESIGN.md 的专题站点，适合参考 AI coding agent 与设计系统提示词如何打包成可浏览的目录与展示页。",
+    "intro_en": "A site that collects reusable DESIGN.md files, useful for studying how design-system prompts and AI agent workflows are packaged into a browsable gallery.",
+    "screenshot": "assets/screenshots/getdesign.jpeg",
+    "captured_at": "2026-04-22",
+    "notes": ""
+  },
+  {
     "name": "SiteInspire",
     "category": "画廊",
     "url": "https://www.siteinspire.com/websites/category/personal",
