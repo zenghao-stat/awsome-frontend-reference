@@ -37,3 +37,4 @@
 | [Impeccable](https://impeccable.style/) | 一个围绕 frontend-design skill 打造的专题站点，适合参考 skill 产品页面的文案组织、功能分层和视觉包装。 | <img src="assets/screenshots/impeccable-style.png" width="360" alt="Impeccable screenshot" /> |
 | [Design Prompts](https://www.designprompts.dev/) | 一个 AI 驱动的设计风格探索器，用同一份内容展示多种视觉风格，适合参考 prompt 到界面结果的映射。 | <img src="assets/screenshots/designprompts.png" width="360" alt="Design Prompts screenshot" /> |
 | [Aura](https://www.aura.build/) | 一个 AI 落地页生成与模板资源站，适合参考 landing page 的视觉包装、模板组织和产品叙事。 | <img src="assets/screenshots/aura-build.jpg" width="360" alt="Aura screenshot" /> |
+| [Open Design](https://open-design.ai/) | 一个把本地 coding agent 变成设计引擎的开源项目，围绕 composable skills 和设计系统组织 AI 设计工作流。 | <img src="assets/screenshots/open-design.png" width="360" alt="Open Design screenshot" /> |

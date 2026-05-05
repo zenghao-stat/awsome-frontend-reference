@@ -60,6 +60,16 @@
     "notes": ""
   },
   {
+    "name": "Open Design",
+    "category": "Skills & Prompts",
+    "url": "https://open-design.ai/",
+    "intro": "一个把本地 coding agent 变成设计引擎的开源项目，围绕 composable skills 和设计系统组织 AI 设计工作流。",
+    "intro_en": "An open-source project that turns a local coding agent into a design engine, built around composable skills and design systems.",
+    "screenshot": "assets/screenshots/open-design.png",
+    "captured_at": "2026-05-05",
+    "notes": ""
+  },
+  {
     "name": "SiteInspire",
     "category": "画廊",
     "url": "https://www.siteinspire.com/websites/category/personal",
