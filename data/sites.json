@@ -70,6 +70,16 @@
     "notes": ""
   },
   {
+    "name": "GC Minimal Zine Poster",
+    "category": "Skills & Prompts",
+    "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster",
+    "intro": "一个把主题、句子、情绪或照片编译成极简 zine 风格海报 prompt 与位图的 Codex skill，适合参考生成式视觉 skill 的规则组织、变化引擎和示例展示。",
+    "intro_en": "A Codex skill that turns themes, sentences, moods, or photos into minimal zine-style poster prompts and images, useful for studying how visual rules, variations, and examples are packaged.",
+    "screenshot": "assets/screenshots/gc-minimal-zine-poster.jpeg",
+    "captured_at": "2026-07-24",
+    "notes": ""
+  },
+  {
     "name": "SiteInspire",
     "category": "画廊",
     "url": "https://www.siteinspire.com/websites/category/personal",
